@@ -25,12 +25,11 @@ jobs:
         run: bun install
 
       - name: Force Install Missing Plugins
-        # Ini langkah darurat untuk memastikan @vitejs/plugin-react tersedia
         run: bun add @vitejs/plugin-react @types/node vite --dev
 
       - name: Build Project
-        # Kita tambahkan flag --base agar link aset tetap aman
-        run: bun run build --base=/sephone-aquascan/
+        # Cukup jalankan build standar
+        run: bun run build
 
       - name: Upload Artifacts
         uses: actions/upload-pages-artifact@v3
