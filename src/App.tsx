@@ -13,11 +13,10 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      {/* TAMBAHKAN basename DI SINI */}
-      <BrowserRouter basename="/sephone-aquascan">
+      {/* Hapus basename, kembali ke default */}
+      <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
