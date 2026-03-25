@@ -3,8 +3,8 @@ import react from '@vitejs/plugin-react'
 import path from "path"
 
 export default defineConfig({
-  // Tambahkan baris ini! Sesuaikan dengan nama repo kamu
-  base: '/sephone-aquascan/', 
+  // Ubah dari '/sephone-aquascan/' menjadi '/'
+  base: '/', 
   
   plugins: [react()],
   resolve: {
